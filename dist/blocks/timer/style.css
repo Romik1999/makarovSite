@@ -19,6 +19,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  margin-bottom: 155px;
 }
 
 .deadline {
@@ -47,6 +48,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 250px;
+  width: 100%;
 }
 
 .deadline-number__time {
