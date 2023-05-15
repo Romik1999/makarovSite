@@ -1,0 +1,27 @@
+.section-title {
+  font-family: DelaGothicOne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, right top, from(#8A2387), color-stop(50.87%, #E94057), to(#F27121));
+  background: -o-linear-gradient(left, #8A2387 0%, #E94057 50.87%, #F27121 100%);
+  background: linear-gradient(90deg, #8A2387 0%, #E94057 50.87%, #F27121 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 155px;
+  width: 100%;
+}
