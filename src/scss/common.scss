@@ -1,0 +1,66 @@
+@import "./vars";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $black;
+  font-family: Forum, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #F4F6F7;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  position: relative;
+  padding: 100px 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 1001px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 769px) {
+}
+
+@media screen and (max-width: 575px) {
+}
+
+@media screen and (max-width: 425px) {
+}
+
+@media screen and (max-width: 350px) {
+}
