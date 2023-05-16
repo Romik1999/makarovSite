@@ -1,9 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Initializing it
+
     var fullPageInstance = new fullpage('#fullpage', {
         navigation: false,
         menu: '#menu',
     });
+
+    const swiper = new Swiper('.dresscode-slider', {
+        slidesPerView: 4,
+        loop: false,
+        navigation: {
+            nextEl: '.dresscode-slider__arrow--next',
+            prevEl: '.dresscode-slider__arrow--prev',
+        },
+    });
+
 
     let countDownDate = new Date("August 19, 2023 17:00:00").getTime();
 

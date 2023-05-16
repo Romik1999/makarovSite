@@ -9,26 +9,19 @@
     <link rel="stylesheet" href="libs/fullpage/fullpage.css"/>
 
     <link rel="stylesheet" href="css/style.min.css"/>
-    <title>Vodoley</title>
+    <title>Makarov</title>
 </head>
 <body>
 
-<!--@@include('header/header.html', {customClass: 'header&#45;&#45;fixed'})-->
 @@include('header/header.html')
 
 <main class="main">
-    <!--    @@include('section/section.html', {sectionClass: 'section1', sectionId: '1', bgColor: 'red'})-->
-    <!--    @@include('section/section.html', {sectionClass: 'section2', sectionId: '2', bgColor: 'blue'})-->
-    <!--    @@include('section/section.html', {sectionClass: 'section3', sectionId: '3', bgColor: 'orange'})-->
-    <!--    @@include('section/section.html', {sectionClass: 'section4', sectionId: '4', bgColor: 'green'})-->
-    <!--    @@include('section/section.html', {sectionClass: 'section5', sectionId: '5', bgColor: 'yellow'})-->
-
     <div id="fullpage">
-        <section class="section hero" data-anchor="hero">hero</section>
+        @@include('hero/hero.html')
         <section class="section date" data-anchor="date">date</section>
         <section class="section address" data-anchor="address">Адрес</section>
         <section class="section program" data-anchor="program">Программа</section>
-        <section class="section dressCode" data-anchor="dressCode">Dress code</section>
+        @@include('dresscode/dresscode.html')
         @@include('questions/questions.html')
         @@include('timer/timer.html')
     </div>

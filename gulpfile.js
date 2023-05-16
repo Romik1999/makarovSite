@@ -23,7 +23,6 @@ import {scss} from "./gulp/tasks/scss.js";
 import {js} from "./gulp/tasks/js.js";
 import {images} from "./gulp/tasks/images.js";
 import {otfToTtf, ttfToWoff, fontsStyle} from "./gulp/tasks/fonts.js";
-import {blocks} from "./gulp/tasks/html.js";
 import {copyFiles} from "./gulp/tasks/copy.js";
 
 // Наблюдатель за изменениями в файлах
@@ -33,7 +32,6 @@ function watcher() {
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
     gulp.watch(path.watch.images, images);
-    gulp.watch(path.watch.blocks, blocks);
     gulp.watch(path.watch.files, copyFiles);
 }
 
@@ -41,7 +39,7 @@ function watcher() {
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // Основные задачи
-const mainTasks = gulp.series(fonts, copyFiles, gulp.parallel(copy, html, blocks, scss, js, images));
+const mainTasks = gulp.series(fonts, copyFiles, gulp.parallel(copy, html, scss, js, images));
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
