@@ -1,24 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let hrefs = document.querySelectorAll('.js-scroller')
-    hrefs.forEach(href => {
-        href.addEventListener('click', (e) => {
-            e.preventDefault();
-            let id = e.target.getAttribute('href').slice(1)
-            let scrollTarget = document.getElementById(id);
-            let topOffset = document.querySelector('.header').offsetHeight;
-            let elementPosition = scrollTarget.getBoundingClientRect().top;
-            let offsetPosition = elementPosition;
-            window.scrollBy({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        })
+    // Initializing it
+    var fullPageInstance = new fullpage('#fullpage', {
+        navigation: false,
+        anchors: ['firstPage', 'secondPage', 'thirdPage'],
+        menu: '#menu',
+        credits: {
+            enabled: false,
+        },
     });
-
 
     let countDownDate = new Date("August 19, 2023 17:00:00").getTime();
 
-    let x = setInterval(function() {
+    let x = setInterval(function () {
         let now = new Date().getTime();
         let distance = countDownDate - now;
 

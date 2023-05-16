@@ -62,3 +62,7 @@ main {
   text-align: center;
   text-transform: uppercase;
 }
+
+.fp-watermark {
+  display: none !important;
+}

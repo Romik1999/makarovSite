@@ -79,6 +79,10 @@ main {
   text-transform: uppercase;
 }
 
+.fp-watermark {
+  display: none !important;
+}
+
 .header {
   position: fixed;
   top: 0;

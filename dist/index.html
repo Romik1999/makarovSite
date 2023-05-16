@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="libs/fullpage/fullpage.css"/>
 
     <link rel="stylesheet" href="css/style.min.css"/>
     <title>Vodoley</title>
@@ -15,25 +16,29 @@
 
 <header class="header">
     <div class="header__wrapper">
-        <div class="header__logo">
-            <img src="./img/logo.png">
-        </div>
         <div class="header__menu">
             <nav class="header-menu">
-                <ul class="header-menu__items">
-                    <li class="header-menu__item"><a class="header-menu__link js-scroller" href="#section1">Секция 1</a>
+                <ul class="header-menu__items" id="menu">
+                    <li class="header-menu__item" data-menuanchor="hero">
+                        <a class="header-menu__link" href="#hero">Промо</a>
                     </li>
-                    <li class="header-menu__item"><a class="header-menu__link js-scroller" href="#section2">Секция 2</a>
+                    <li class="header-menu__item" data-menuanchor="date">
+                        <a class="header-menu__link" href="#date">Дата</a>
                     </li>
-                    <li class="header-menu__item"><a class="header-menu__link js-scroller" href="#section3">Секция 3</a>
+                    <li class="header-menu__item" data-menuanchor="address">
+                        <a class="header-menu__link" href="#address">Адрес</a>
                     </li>
-                    <li class="header-menu__item"><a class="header-menu__link js-scroller" href="#section4">Секция 4</a>
+                    <li class="header-menu__item" data-menuanchor="program">
+                        <a class="header-menu__link" href="#program">Программа</a>
                     </li>
-                    <li class="header-menu__item"><a class="header-menu__link js-scroller" href="#section5">Секция 5</a>
+                    <li class="header-menu__item" data-menuanchor="dressCode">
+                        <a class="header-menu__link" href="#dressCode">Dress code</a>
                     </li>
-                    <li class="header-menu__item"><a class="header-menu__link js-scroller" href="#section6">Секция 6</a>
+                    <li class="header-menu__item" data-menuanchor="questions">
+                        <a class="header-menu__link" href="#questions">Вопросы</a>
                     </li>
-                    <li class="header-menu__item"><a class="header-menu__link js-scroller" href="#section7">Секция 7</a>
+                    <li class="header-menu__item" data-menuanchor="timer">
+                        <a class="header-menu__link" href="#timer">Таймер</a>
                     </li>
                 </ul>
             </nav>
@@ -50,33 +55,19 @@
 </header>
 
 <main class="main">
-    <section class="section section1" id="section1" style="background-color: red">
-    <div class="cont">
-        <h2 class="section-title">Section 1</h2>
-    </div>
-</section>
-    <section class="section section2" id="section2" style="background-color: blue">
-    <div class="cont">
-        <h2 class="section-title">Section 2</h2>
-    </div>
-</section>
-    <section class="section section3" id="section3" style="background-color: orange">
-    <div class="cont">
-        <h2 class="section-title">Section 3</h2>
-    </div>
-</section>
-    <section class="section section4" id="section4" style="background-color: green">
-    <div class="cont">
-        <h2 class="section-title">Section 4</h2>
-    </div>
-</section>
-    <section class="section section5" id="section5" style="background-color: yellow">
-    <div class="cont">
-        <h2 class="section-title">Section 5</h2>
-    </div>
-</section>
+    
+    
+    
+    
+    
 
-    <section class="section questions" id="section6">
+    <div id="fullpage">
+        <section class="section hero" data-anchor="hero">hero</section>
+        <section class="section date" data-anchor="date">date</section>
+        <section class="section address" data-anchor="address">Адрес</section>
+        <section class="section program" data-anchor="program">Программа</section>
+        <section class="section dressCode" data-anchor="dressCode">Dress code</section>
+        <section class="section questions" data-anchor="questions">
     <div class="cont">
         <h2 class="section-title questions__title">Вопросы?</h2>
         <div class="questions__text">
@@ -84,10 +75,9 @@
             Если у вас возникли вопросы обращаетесь к нашему организатору
         </div>
         <a class="questions__phone" href="tel:+79370646603">+7 937 064 6603 Ангелина</a>
-        </div>
     </div>
 </section>
-    <section class="section timer" id="section7">
+        <section class="section timer" data-anchor="timer">
     <div class="cont">
         <h2 class="section-title timer__title">До нашей свадьбы<br> осталось...</h2>
         <div class="timer__deadline">
@@ -112,8 +102,11 @@
         </div>
     </div>
 </section>
+    </div>
+
 </main>
 
+<script type="text/javascript" src="libs/fullpage/fullpage.min.js"></script>
 <script type="text/javascript" src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>
 

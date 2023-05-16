@@ -34,7 +34,7 @@ main {
   align-items: center;
   justify-content: center;
 
-  &-title{
+  &-title {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -42,6 +42,10 @@ main {
     text-align: center;
     text-transform: uppercase;
   }
+}
+
+.fp-watermark {
+  display: none !important;
 }
 
 @media screen and (max-width: 1199px) {

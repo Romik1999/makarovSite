@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="libs/fullpage/fullpage.css"/>
 
     <link rel="stylesheet" href="css/style.min.css"/>
     <title>Vodoley</title>
@@ -16,16 +17,25 @@
 @@include('header/header.html')
 
 <main class="main">
-    @@include('section/section.html', {sectionClass: 'section1', sectionId: '1', bgColor: 'red'})
-    @@include('section/section.html', {sectionClass: 'section2', sectionId: '2', bgColor: 'blue'})
-    @@include('section/section.html', {sectionClass: 'section3', sectionId: '3', bgColor: 'orange'})
-    @@include('section/section.html', {sectionClass: 'section4', sectionId: '4', bgColor: 'green'})
-    @@include('section/section.html', {sectionClass: 'section5', sectionId: '5', bgColor: 'yellow'})
+    <!--    @@include('section/section.html', {sectionClass: 'section1', sectionId: '1', bgColor: 'red'})-->
+    <!--    @@include('section/section.html', {sectionClass: 'section2', sectionId: '2', bgColor: 'blue'})-->
+    <!--    @@include('section/section.html', {sectionClass: 'section3', sectionId: '3', bgColor: 'orange'})-->
+    <!--    @@include('section/section.html', {sectionClass: 'section4', sectionId: '4', bgColor: 'green'})-->
+    <!--    @@include('section/section.html', {sectionClass: 'section5', sectionId: '5', bgColor: 'yellow'})-->
 
-    @@include('questions/questions.html')
-    @@include('timer/timer.html')
+    <div id="fullpage">
+        <section class="section hero" data-anchor="hero">hero</section>
+        <section class="section date" data-anchor="date">date</section>
+        <section class="section address" data-anchor="address">Адрес</section>
+        <section class="section program" data-anchor="program">Программа</section>
+        <section class="section dressCode" data-anchor="dressCode">Dress code</section>
+        @@include('questions/questions.html')
+        @@include('timer/timer.html')
+    </div>
+
 </main>
 
+<script type="text/javascript" src="libs/fullpage/fullpage.min.js"></script>
 <script type="text/javascript" src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>
 
