@@ -2,11 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initializing it
     var fullPageInstance = new fullpage('#fullpage', {
         navigation: false,
-        anchors: ['firstPage', 'secondPage', 'thirdPage'],
         menu: '#menu',
-        credits: {
-            enabled: false,
-        },
     });
 
     let countDownDate = new Date("August 19, 2023 17:00:00").getTime();
