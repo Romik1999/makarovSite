@@ -1,0 +1,53 @@
+@import "../../scss/vars";
+
+.address {
+  &__wrapper {
+    display: flex;
+    column-gap: 50px;
+  }
+
+  &__info {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: space-between;
+
+    &:after,
+    &:before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 25px;
+      background: linear-gradient(90deg, #8A2387 0%, #E94057 52.43%, #F27121 100%);
+      border-radius: 50px;
+    }
+  }
+
+  &__items{
+    font-family: DelaGothicOne, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__item{
+    display: block;
+
+    &:not(:last-child){
+      margin-bottom: 33px;
+    }
+  }
+
+  &__map {
+    max-width: 50%;
+    width: 100%;
+    height: 40vh;
+    min-height: 510px;
+
+    background: linear-gradient(270deg, #8A2387 0%, #E94057 52.43%, #F27121 100%);
+    padding: 25px;
+    box-sizing: border-box;
+  }
+}

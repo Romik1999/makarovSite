@@ -66,3 +66,9 @@ main {
 .fp-watermark {
   display: none !important;
 }
+
+.fp-overflow {
+  max-width: 1560px;
+  width: 100%;
+  margin: 0 auto;
+}
