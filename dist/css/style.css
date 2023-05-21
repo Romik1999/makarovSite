@@ -488,6 +488,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
 }
 
 .dresscode__text {
@@ -562,10 +563,6 @@ main {
   border-radius: 75px;
 }
 
-.questions__title {
-  margin-bottom: 50px;
-}
-
 .questions__text {
   font-size: 50px;
   line-height: 120%;
@@ -582,7 +579,6 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
-  line-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,10 +597,6 @@ main {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
-
-.timer__title {
-  margin-bottom: 155px;
 }
 
 .deadline {
@@ -793,5 +785,137 @@ main {
 
   .deadline-number__text {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .section-title {
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+
+  .date__title {
+    font-size: 50px;
+  }
+
+  .date__backtitle {
+    font-size: 80px;
+  }
+
+  .date__appeal {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .date__text {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .date__date {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .date__ps {
+    font-size: 30px;
+    padding: 25px 0;
+  }
+
+  .date__ps img,
+  .date__ps svg {
+    width: 80px;
+    height: 80px;
+    top: calc(50% - 40px);
+    left: calc(50% - 50px);
+  }
+
+  .address__info:after,
+  .address__info:before {
+    height: 15px;
+    border-radius: 20px;
+  }
+
+  .address__items {
+    font-size: 26px;
+  }
+
+  .address__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .address__map {
+    min-height: 400px;
+    padding: 15px;
+  }
+
+  .program__items {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .program__items:after {
+    height: 15px;
+    top: calc(50% - 7.5px);
+    border-radius: 15px;
+  }
+
+  .program__item {
+    width: 175px;
+  }
+
+  .program__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .program__column {
+    width: 6px;
+    height: 100px;
+  }
+
+  .program__text {
+    font-size: 24px;
+    height: 70px;
+  }
+
+  .dresscode__text {
+    font-size: 24px;
+  }
+
+  .dresscode__slider {
+    padding: 0 50px;
+  }
+
+  .dresscode-slider__item {
+    height: 300px !important;
+  }
+
+  .dresscode-slider__arrow {
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+  }
+
+  .questions__text {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .questions__phone {
+    font-size: 30px;
+  }
+
+  .deadline-number {
+    max-width: 150px;
+  }
+
+  .deadline-number__time {
+    font-size: 55px;
+  }
+
+  .deadline-number__text {
+    font-size: 26px;
   }
 }

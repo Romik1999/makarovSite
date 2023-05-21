@@ -69,3 +69,24 @@
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 1441px) {
+  .address__info:after,
+  .address__info:before {
+    height: 15px;
+    border-radius: 20px;
+  }
+
+  .address__items {
+    font-size: 26px;
+  }
+
+  .address__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .address__map {
+    min-height: 400px;
+    padding: 15px;
+  }
+}

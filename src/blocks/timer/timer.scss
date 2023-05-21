@@ -1,11 +1,5 @@
 @import "../../scss/vars";
 
-.timer {
-  &__title {
-    margin-bottom: 155px;
-  }
-}
-
 .deadline {
   display: flex;
   align-items: center;
@@ -21,6 +15,10 @@
 
     @media screen and (max-width: 1921px) {
       max-width: 200px;
+    }
+
+    @media screen and (max-width: 1441px) {
+      max-width: 150px;
     }
 
     &__time {
@@ -41,6 +39,10 @@
       @media screen and (max-width: 1921px) {
         font-size: 70px;
       }
+
+      @media screen and (max-width: 1441px) {
+        font-size: 55px;
+      }
     }
 
     &__text {
@@ -55,6 +57,10 @@
 
       @media screen and (max-width: 1921px) {
         font-size: 30px;
+      }
+
+      @media screen and (max-width: 1441px) {
+        font-size: 26px;
       }
     }
   }

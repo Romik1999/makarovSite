@@ -76,6 +76,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 1921px) {
@@ -96,5 +97,38 @@
   .program__text {
     font-size: 30px;
     height: 90px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .program__items {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .program__items:after {
+    height: 15px;
+    top: calc(50% - 7.5px);
+    border-radius: 15px;
+  }
+
+  .program__item {
+    width: 175px;
+  }
+
+  .program__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .program__column {
+    width: 6px;
+    height: 100px;
+  }
+
+  .program__text {
+    font-size: 24px;
+    height: 70px;
   }
 }

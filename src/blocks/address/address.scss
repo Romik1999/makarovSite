@@ -23,6 +23,11 @@
       background: linear-gradient(90deg, #8A2387 0%, #E94057 52.43%, #F27121 100%);
       border-radius: 50px;
       margin: 0 auto;
+
+      @media screen and (max-width: 1441px) {
+        height: 15px;
+        border-radius: 20px;
+      }
     }
   }
 
@@ -35,6 +40,10 @@
     @media screen and (max-width: 1921px) {
       font-size: 30px;
     }
+
+    @media screen and (max-width: 1441px) {
+      font-size: 26px;
+    }
   }
 
   &__item{
@@ -42,6 +51,10 @@
 
     &:not(:last-child){
       margin-bottom: 33px;
+
+      @media screen and (max-width: 1441px) {
+        margin-bottom: 25px;
+      }
     }
   }
 
@@ -54,5 +67,11 @@
     background: linear-gradient(270deg, #8A2387 0%, #E94057 52.43%, #F27121 100%);
     padding: 25px;
     box-sizing: border-box;
+
+    @media screen and (max-width: 1441px) {
+      min-height: 400px;
+      padding: 15px;
+    }
+
   }
 }

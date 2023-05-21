@@ -1,7 +1,3 @@
-.timer__title {
-  margin-bottom: 155px;
-}
-
 .deadline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,5 +74,19 @@
 
   .deadline-number__text {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .deadline-number {
+    max-width: 150px;
+  }
+
+  .deadline-number__time {
+    font-size: 55px;
+  }
+
+  .deadline-number__text {
+    font-size: 26px;
   }
 }
