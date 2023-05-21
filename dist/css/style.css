@@ -231,7 +231,7 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 80px;
-  line-height: 100px;
+  line-height: 120%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,6 +250,7 @@ main {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  margin-top: 0;
   margin-bottom: 155px;
   width: 100%;
 }
@@ -277,6 +278,7 @@ main {
 
 .date__top {
   position: relative;
+  padding-top: 75px;
 }
 
 .date__title {
@@ -296,6 +298,7 @@ main {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  width: 100%;
 }
 
 .date__wrapper {
@@ -339,6 +342,8 @@ main {
 .date__ps svg {
   width: 140px;
   height: 140px;
+  top: calc(50% - 70px);
+  left: calc(50% - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,8 +351,6 @@ main {
      object-fit: contain;
   position: absolute;
   z-index: -1;
-  top: calc(50% - 70px);
-  left: calc(50% - 70px);
 }
 
 .address__wrapper {
@@ -379,12 +382,13 @@ main {
 .address__info:before {
   content: "";
   display: block;
-  width: 100%;
+  width: 70%;
   height: 25px;
   background: -webkit-gradient(linear, left top, right top, from(#8A2387), color-stop(52.43%, #E94057), to(#F27121));
   background: -o-linear-gradient(left, #8A2387 0%, #E94057 52.43%, #F27121 100%);
   background: linear-gradient(90deg, #8A2387 0%, #E94057 52.43%, #F27121 100%);
   border-radius: 50px;
+  margin: 0 auto;
 }
 
 .address__items {
@@ -496,7 +500,7 @@ main {
 }
 
 .dresscode__title {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
 
 .dresscode__text {
@@ -510,6 +514,8 @@ main {
 .dresscode__slider {
   position: relative;
   padding: 0 100px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .dresscode-slider__item {
@@ -523,8 +529,8 @@ main {
 .dresscode-slider__arrow {
   width: 100px;
   height: 100px;
-  position: absolute;
   top: calc(50% - 50px);
+  position: absolute;
   z-index: 99;
   cursor: pointer;
 }
@@ -677,4 +683,117 @@ main {
           align-items: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1921px) {
+  .section {
+    padding: 60px 30px;
+  }
+
+  .header__wrapper {
+    height: 40px;
+  }
+
+  .section-title {
+    font-size: 60px;
+    margin-bottom: 100px;
+  }
+
+  .hero {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .date__top {
+    padding-top: 30px;
+  }
+
+  .date__title {
+    font-size: 70px;
+  }
+
+  .date__backtitle {
+    font-size: 110px;
+  }
+
+  .date__text {
+    font-size: 28px;
+  }
+
+  .date__date {
+    font-size: 40px;
+  }
+
+  .date__ps {
+    padding: 30px 0;
+  }
+
+  .date__ps img,
+  .date__ps svg {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+  }
+
+  .address__items {
+    font-size: 30px;
+  }
+
+  .program__items {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .program__item {
+    width: 220px;
+  }
+
+  .program__icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .program__text {
+    font-size: 30px;
+  }
+
+  .dresscode__text {
+    font-size: 30px;
+  }
+
+  .dresscode__slider {
+    padding: 0 70px;
+  }
+
+  .dresscode-slider__item {
+    height: 400px !important;
+  }
+
+  .dresscode-slider__arrow {
+    width: 70px;
+    height: 70px;
+    top: calc(50% - 35px);
+  }
+
+  .questions__text {
+    font-size: 30px;
+  }
+
+  .questions__phone {
+    font-size: 40px;
+  }
+
+  .deadline-number {
+    max-width: 200px;
+  }
+
+  .deadline-number__time {
+    font-size: 70px;
+  }
+
+  .deadline-number__text {
+    font-size: 30px;
+  }
 }

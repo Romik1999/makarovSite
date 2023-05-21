@@ -77,3 +77,23 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media screen and (max-width: 1921px) {
+  .program__items {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .program__item {
+    width: 220px;
+  }
+
+  .program__icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .program__text {
+    font-size: 30px;
+  }
+}

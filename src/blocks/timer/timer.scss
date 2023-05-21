@@ -19,6 +19,10 @@
     max-width: 250px;
     width: 100%;
 
+    @media screen and (max-width: 1921px) {
+      max-width: 200px;
+    }
+
     &__time {
       font-family: DelaGothicOne, sans-serif;
       font-size: 96px;
@@ -33,6 +37,10 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+
+      @media screen and (max-width: 1921px) {
+        font-size: 70px;
+      }
     }
 
     &__text {
@@ -44,6 +52,10 @@
       align-items: center;
       text-align: center;
       text-transform: uppercase;
+
+      @media screen and (max-width: 1921px) {
+        font-size: 30px;
+      }
     }
   }
 }

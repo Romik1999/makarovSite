@@ -8,6 +8,11 @@
     column-gap: 30px;
     position: relative;
 
+    @media screen and (max-width: 1921px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+
     &:after{
       content: '';
       position: absolute;
@@ -28,12 +33,21 @@
     align-items: center;
     row-gap: 30px;
     width: 260px;
+
+    @media screen and (max-width: 1921px) {
+      width: 220px;
+    }
   }
 
   &__icon {
     display: flex;
     width: 114px;
     height: 114px;
+
+    @media screen and (max-width: 1921px) {
+      width: 90px;
+      height: 90px;
+    }
 
     & img,
     & svg {
@@ -58,5 +72,9 @@
     height: 114px;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1921px) {
+      font-size: 30px;
+    }
   }
 }

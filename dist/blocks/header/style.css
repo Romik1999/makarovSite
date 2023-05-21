@@ -134,3 +134,9 @@
           transform: rotate(-45deg);
   bottom: auto;
 }
+
+@media screen and (max-width: 1921px) {
+  .header__wrapper {
+    height: 40px;
+  }
+}

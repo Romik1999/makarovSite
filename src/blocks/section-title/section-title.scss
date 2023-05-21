@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 80px;
-  line-height: 100px;
+  line-height: 120%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,13 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  margin-top: 0;
   margin-bottom: 155px;
   width: 100%;
+
+  @media screen and (max-width: 1921px) {
+    font-size: 60px;
+    margin-bottom: 100px;
+  }
 
 }

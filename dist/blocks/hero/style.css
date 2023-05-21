@@ -18,3 +18,11 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+@media screen and (max-width: 1921px) {
+  .hero {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}

@@ -31,6 +31,10 @@
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1921px) {
+      font-size: 30px;
+    }
   }
 
   &__item{

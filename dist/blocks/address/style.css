@@ -27,12 +27,13 @@
 .address__info:before {
   content: "";
   display: block;
-  width: 100%;
+  width: 70%;
   height: 25px;
   background: -webkit-gradient(linear, left top, right top, from(#8A2387), color-stop(52.43%, #E94057), to(#F27121));
   background: -o-linear-gradient(left, #8A2387 0%, #E94057 52.43%, #F27121 100%);
   background: linear-gradient(90deg, #8A2387 0%, #E94057 52.43%, #F27121 100%);
   border-radius: 50px;
+  margin: 0 auto;
 }
 
 .address__items {
@@ -61,4 +62,10 @@
   padding: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (max-width: 1921px) {
+  .address__items {
+    font-size: 30px;
+  }
 }

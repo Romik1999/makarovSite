@@ -34,6 +34,10 @@ main {
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 1921px) {
+    padding: 60px 30px;
+  }
+
   &-title {
     font-style: normal;
     font-weight: 400;

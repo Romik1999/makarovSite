@@ -1,5 +1,6 @@
 .date__top {
   position: relative;
+  padding-top: 75px;
 }
 
 .date__title {
@@ -19,6 +20,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  width: 100%;
 }
 
 .date__wrapper {
@@ -62,6 +64,8 @@
 .date__ps svg {
   width: 140px;
   height: 140px;
+  top: calc(50% - 70px);
+  left: calc(50% - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,6 +73,38 @@
      object-fit: contain;
   position: absolute;
   z-index: -1;
-  top: calc(50% - 70px);
-  left: calc(50% - 70px);
+}
+
+@media screen and (max-width: 1921px) {
+  .date__top {
+    padding-top: 30px;
+  }
+
+  .date__title {
+    font-size: 70px;
+  }
+
+  .date__backtitle {
+    font-size: 110px;
+  }
+
+  .date__text {
+    font-size: 28px;
+  }
+
+  .date__date {
+    font-size: 40px;
+  }
+
+  .date__ps {
+    padding: 30px 0;
+  }
+
+  .date__ps img,
+  .date__ps svg {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+  }
 }
