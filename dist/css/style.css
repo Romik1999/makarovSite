@@ -54,7 +54,7 @@ main {
 
 .section {
   position: relative;
-  padding: 100px 30px;
+  padding: 80px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
@@ -68,15 +68,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.section-title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 120%;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .fp-watermark {
@@ -113,7 +104,7 @@ main {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
-  height: 80px;
+  height: 60px;
 }
 
 .header__logo {
@@ -251,7 +242,7 @@ main {
   background-clip: text;
   text-fill-color: transparent;
   margin-top: 0;
-  margin-bottom: 155px;
+  margin-bottom: 100px;
   width: 100%;
 }
 
@@ -313,14 +304,14 @@ main {
 
 .date__text {
   font-size: 32px;
-  line-height: 200%;
+  line-height: 170%;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
 
 .date__date {
   font-family: DelaGothicOne, sans-serif;
-  font-size: 64px;
+  font-size: 58px;
   text-transform: uppercase;
   background: -o-linear-gradient(0.19deg, #8A2387 0.21%, #E94057 53.16%, #F27121 99.88%);
   background: linear-gradient(89.81deg, #8A2387 0.21%, #E94057 53.16%, #F27121 99.88%);
@@ -335,15 +326,15 @@ main {
   font-size: 36px;
   text-transform: uppercase;
   position: relative;
-  padding: 50px 0;
+  padding: 42px 0;
 }
 
 .date__ps img,
 .date__ps svg {
-  width: 140px;
-  height: 140px;
-  top: calc(50% - 70px);
-  left: calc(50% - 70px);
+  width: 120px;
+  height: 120px;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,10 +488,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.dresscode__title {
-  margin-bottom: 50px !important;
 }
 
 .dresscode__text {
@@ -696,7 +683,7 @@ main {
 
   .section-title {
     font-size: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 
   .hero {
@@ -757,6 +744,7 @@ main {
 
   .program__text {
     font-size: 30px;
+    height: 90px;
   }
 
   .dresscode__text {
@@ -768,13 +756,23 @@ main {
   }
 
   .dresscode-slider__item {
-    height: 400px !important;
+    height: 350px !important;
   }
 
   .dresscode-slider__arrow {
     width: 70px;
     height: 70px;
     top: calc(50% - 35px);
+  }
+
+  .dresscode-item {
+    border-radius: 40px;
+    padding: 7px;
+  }
+
+  .dresscode-item img,
+  .dresscode-item svg {
+    border-radius: 35px;
   }
 
   .questions__text {

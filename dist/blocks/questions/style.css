@@ -38,3 +38,13 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
+@media screen and (max-width: 1921px) {
+  .questions__text {
+    font-size: 30px;
+  }
+
+  .questions__phone {
+    font-size: 40px;
+  }
+}

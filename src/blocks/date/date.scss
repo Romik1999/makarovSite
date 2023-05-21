@@ -52,7 +52,7 @@
 
   &__text{
     font-size: 32px;
-    line-height: 200%;
+    line-height: 170%;
     text-transform: uppercase;
     margin-bottom: 40px;
 
@@ -63,7 +63,7 @@
 
   &__date{
     font-family: DelaGothicOne, sans-serif;
-    font-size: 64px;
+    font-size: 58px;
     text-transform: uppercase;
 
     background: linear-gradient(89.81deg, #8A2387 0.21%, #E94057 53.16%, #F27121 99.88%);
@@ -82,7 +82,7 @@
     font-size: 36px;
     text-transform: uppercase;
     position: relative;
-    padding: 50px 0;
+    padding: 42px 0;
 
     @media screen and (max-width: 1921px) {
       padding: 30px 0;
@@ -90,10 +90,10 @@
 
     & img,
     & svg{
-      width: 140px;
-      height: 140px;
-      top: calc(50% - 70px);
-      left: calc(50% - 70px);
+      width: 120px;
+      height: 120px;
+      top: calc(50% - 60px);
+      left: calc(50% - 60px);
       display: flex;
       object-fit: contain;
       position: absolute;

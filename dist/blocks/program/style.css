@@ -95,5 +95,6 @@
 
   .program__text {
     font-size: 30px;
+    height: 90px;
   }
 }

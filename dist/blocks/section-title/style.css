@@ -23,13 +23,13 @@
   background-clip: text;
   text-fill-color: transparent;
   margin-top: 0;
-  margin-bottom: 155px;
+  margin-bottom: 100px;
   width: 100%;
 }
 
 @media screen and (max-width: 1921px) {
   .section-title {
     font-size: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 }

@@ -38,7 +38,7 @@ main {
 
 .section {
   position: relative;
-  padding: 100px 30px;
+  padding: 80px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
@@ -52,15 +52,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.section-title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 120%;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .fp-watermark {
