@@ -28,6 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    let burger = document.querySelector('.hamburger')
+    let mobile = document.querySelector('.header__menu')
+    let links = document.querySelectorAll('.header-menu__link')
+
+    if (burger) {
+        burger.addEventListener('click', function () {
+            burger.classList.toggle('active')
+            mobile.classList.toggle('active')
+        })
+    }
+
+    links.forEach(link => {
+        link.addEventListener('click', function () {
+            burger.classList.toggle('active')
+            mobile.classList.toggle('active')
+        })
+    })
+
 
     let countDownDate = new Date("August 19, 2023 17:00:00").getTime();
 
