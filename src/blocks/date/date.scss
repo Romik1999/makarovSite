@@ -8,6 +8,10 @@
     @media screen and (max-width: 1921px) {
       padding-top: 30px;
     }
+
+    @media screen and (max-width: 800px) {
+      padding-top: 0;
+    }
   }
 
   &__title {
@@ -19,6 +23,10 @@
 
     @media screen and (max-width: 1441px) {
       font-size: 50px;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 40px;
     }
   }
 
@@ -46,6 +54,10 @@
     @media screen and (max-width: 1441px) {
       font-size: 80px;
     }
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
   }
 
   &__wrapper{
@@ -60,6 +72,15 @@
     @media screen and (max-width: 1441px) {
       font-size: 30px;
       margin-bottom: 25px;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 22px;
     }
   }
 
@@ -76,6 +97,16 @@
     @media screen and (max-width: 1441px) {
       font-size: 24px;
       margin-bottom: 25px;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+      line-height: 150%;
     }
   }
 
@@ -99,6 +130,11 @@
       font-size: 30px;
       margin-bottom: 25px;
     }
+
+    @media screen and (max-width: 800px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
 
   &__ps{
@@ -114,6 +150,16 @@
     @media screen and (max-width: 1441px) {
       font-size: 30px;
       padding: 25px 0;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 24px;
+      padding: 18px 0;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+      padding: 18px 0;
     }
 
     & img,
@@ -140,6 +186,21 @@
         top: calc(50% - 40px);
         left: calc(50% - 50px);
       }
+
+      @media screen and (max-width: 800px) {
+        width: 60px;
+        height: 60px;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 50px;
+        height: 50px;
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
+      }
+
     }
   }
 }

@@ -90,3 +90,30 @@
     font-size: 26px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .deadline-number {
+    max-width: 110px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .deadline {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+
+  .deadline-number {
+    max-width: 70px;
+  }
+
+  .deadline-number__time {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+
+  .deadline-number__text {
+    font-size: 20px;
+  }
+}

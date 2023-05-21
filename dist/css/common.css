@@ -69,3 +69,9 @@ main {
     padding: 60px 30px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .section {
+    padding: 60px 15px;
+  }
+}

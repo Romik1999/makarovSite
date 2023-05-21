@@ -12,6 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
             nextEl: '.dresscode-slider__arrow--next',
             prevEl: '.dresscode-slider__arrow--prev',
         },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1199: {
+                slidesPerView: 4
+            }
+        }
     });
 
 

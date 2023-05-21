@@ -37,6 +37,10 @@ main {
   @media screen and (max-width: 1921px) {
     padding: 60px 30px;
   }
+
+  @media screen and (max-width: 576px) {
+    padding: 60px 15px;
+  }
 }
 
 .fp-watermark {

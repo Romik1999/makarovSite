@@ -54,3 +54,13 @@
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .questions__text {
+    font-size: 18px;
+  }
+
+  .questions__phone {
+    font-size: 22px;
+  }
+}

@@ -6,6 +6,10 @@
   justify-content: center;
   column-gap: 30px;
 
+  @media screen and (max-width: 576px) {
+    column-gap: 15px;
+  }
+
   &-number {
     display: flex;
     flex-direction: column;
@@ -19,6 +23,14 @@
 
     @media screen and (max-width: 1441px) {
       max-width: 150px;
+    }
+
+    @media screen and (max-width: 800px) {
+      max-width: 110px;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 70px;
     }
 
     &__time {
@@ -43,6 +55,11 @@
       @media screen and (max-width: 1441px) {
         font-size: 55px;
       }
+
+      @media screen and (max-width: 576px) {
+        font-size: 36px;
+        margin-bottom: 5px;
+      }
     }
 
     &__text {
@@ -61,6 +78,10 @@
 
       @media screen and (max-width: 1441px) {
         font-size: 26px;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 20px;
       }
     }
   }

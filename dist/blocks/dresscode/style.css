@@ -119,3 +119,38 @@
     top: calc(50% - 25px);
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .dresscode__slider {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dresscode-slider__item {
+    width: 33.33% !important;
+    padding: 0 10px;
+  }
+
+  .dresscode-slider__item {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dresscode__text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dresscode__text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .dresscode-slider__item {
+    width: 100% !important;
+    height: 350px !important;
+  }
+}

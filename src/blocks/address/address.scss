@@ -4,6 +4,15 @@
   &__wrapper {
     display: flex;
     column-gap: 50px;
+
+    @media screen and (max-width: 800px) {
+      column-gap: 30px;
+    }
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
   }
 
   &__info {
@@ -13,6 +22,11 @@
     flex-direction: column;
     row-gap: 30px;
     justify-content: space-between;
+
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
+      row-gap: 15px;
+    }
 
     &:after,
     &:before{
@@ -26,7 +40,12 @@
 
       @media screen and (max-width: 1441px) {
         height: 15px;
-        border-radius: 20px;
+        border-radius: 15px;
+      }
+
+      @media screen and (max-width: 800px) {
+        height: 10px;
+        border-radius: 10px;
       }
     }
   }
@@ -44,6 +63,14 @@
     @media screen and (max-width: 1441px) {
       font-size: 26px;
     }
+
+    @media screen and (max-width: 800px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+    }
   }
 
   &__item{
@@ -54,6 +81,14 @@
 
       @media screen and (max-width: 1441px) {
         margin-bottom: 25px;
+      }
+
+      @media screen and (max-width: 800px) {
+        margin-bottom: 15px;
+      }
+
+      @media screen and (max-width: 576px) {
+        margin-bottom: 10px;
       }
     }
   }
@@ -73,5 +108,13 @@
       padding: 15px;
     }
 
+    @media screen and (max-width: 800px) {
+      min-height: 300px;
+      padding: 10px;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
+    }
   }
 }

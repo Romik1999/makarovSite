@@ -11,6 +11,12 @@
     padding-bottom: 0;
   }
 
+  @media screen and (max-width: 576px) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
   & .fp-overflow {
     height: 100%;
     display: flex;

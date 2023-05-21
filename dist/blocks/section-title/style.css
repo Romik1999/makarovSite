@@ -40,3 +40,10 @@
     margin-bottom: 50px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .section-title {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+}
