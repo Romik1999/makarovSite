@@ -1224,3 +1224,14 @@ main {
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .dresscode__slider {
+    width: 80%;
+  }
+
+  .dresscode-slider__item {
+    width: 100% !important;
+    height: 280px !important;
+  }
+}

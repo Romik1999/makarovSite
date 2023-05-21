@@ -44,6 +44,10 @@
     @media screen and (max-width: 1199px) {
       width: 100%;
     }
+
+    @media screen and (max-width: 380px) {
+      width: 80%;
+    }
   }
 
   &-slider {
@@ -71,6 +75,11 @@
       @media screen and (max-width: 576px) {
         width: 100% !important;
         height: 350px !important;
+      }
+
+      @media screen and (max-width: 380px) {
+        width: 100% !important;
+        height: 280px !important;
       }
     }
 
