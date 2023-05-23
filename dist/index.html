@@ -240,12 +240,105 @@
         <section class="section feedback" data-anchor="feedback">
     <h2 class="section-title feedback__title">Подтвердите свое присутствие</h2>
     <div class="feedback__form">
-        <form>
-            <input name="fio">
-            <button type="submit">Отправить</button>
+        <form class="form">
+            <div class="form__title">Я...</div>
+            <label class="form-field">
+                <span class="form-field__title">Фамилия имя отчество</span>
+                <input class="form-field__input"
+                       id="fio"
+                       name="fio"
+                       type="text"
+                       placeholder="Фамилия имя отчество">
+            </label>
+            <label class="form-field">
+                <span class="form-field__title">Телефон для связи</span>
+                <input class="form-field__input"
+                       id="phone"
+                       name="phone"
+                       type="text"
+                       onkeypress="maskPhone(event)"
+                       onpaste="onPastePhone(event)"
+                       placeholder="+7 (927) 123 65 98">
+            </label>
+            <div class="form__confirm">
+
+            </div>
+            <div class="form__buttons">
+                <button class="form__button">
+                    Добавить персону
+                    <img src="./img/button-add.svg">
+                </button>
+                <button class="form__button" type="submit">
+                    Отправить ответ
+                    <img src="./img/button-submit.svg">
+                </button>
+            </div>
         </form>
     </div>
 </section>
+
+<script>
+    function maskPhone(e) {
+        const mask = /\+7 \(\d{3}\) \d{3} \d{2} \d{2}/;
+        var valSize = e.target.value.trim().replace(/\D/g, "").length;
+        e = e || window.event;
+        var key = e.keyCode || e.which;
+        key = String.fromCharCode(key);
+        var regex = /[0-9]|\+/;
+        if (!regex.test(key)) {
+            e.returnValue = false;
+            if (e.preventDefault) e.preventDefault();
+        } else {
+            if (valSize !== 0 && key === "+") {
+                e.returnValue = false;
+                return;
+            }
+            if (valSize === 0) {
+                if (key === "8" || key === "7") {
+                    e.target.value = "+7";
+                    e.returnValue = false;
+                } else if (key === "9") {
+                    e.target.value = "+7 (9";
+                    e.returnValue = false;
+                } else if (key !== "+") {
+                    e.target.value = "+7 (9";
+                } else if (key === "+" && e.target.value === "+") {
+                    e.returnValue = false;
+                }
+            } else if (valSize === 1) {
+                e.target.value = "+7 (9";
+                if (key === "9") {
+                    e.returnValue = false;
+                }
+            } else if (valSize === 4) {
+                if (e.target.value.slice(-1) === ")") {
+                    e.target.value = e.target.value.trim() + " ";
+                } else if (e.target.value.slice(-1) === " ") {
+                    return;
+                } else e.target.value = e.target.value.trim() + ") ";
+            } else if (valSize === 7 || valSize === 9) {
+                if (e.target.value.slice(-1) === " ") {
+                    return;
+                } else e.target.value = e.target.value.trim() + " ";
+            } else if (valSize === 11) {
+                e.returnValue = false;
+            }
+        }
+    }
+
+    function onPastePhone(e) {
+        e.preventDefault();
+        const mask = /(7|8)(9\d{2})(\d{3})(\d{2})(\d{2})/;
+        var phone = e.clipboardData.getData('text/plain').replace(/\D/g, "");
+        if (!mask.test(phone)) {
+            e.returnValue = false;
+            return;
+        }
+        var matched = phone.match(mask);
+        e.target.value = "+7 (" + matched[2] + ") " + matched[3] + " " + matched[4] + " " + matched[5];
+        e.returnValue = false;
+    }
+</script>
 
         <section class="section present" data-anchor="present">
     <h2 class="section-title present__title">Вопрос что подарить???</h2>
