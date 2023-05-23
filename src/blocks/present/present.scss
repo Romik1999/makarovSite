@@ -1,0 +1,57 @@
+@import "../../scss/vars";
+
+.present {
+  &__text {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+
+    & p {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 150%;
+
+      &:nth-child(1) {
+        font-size: 50px;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 1921px) {
+          font-size: 40px;
+        }
+        @media screen and (max-width: 1441px) {
+          font-size: 34px;
+        }
+        @media screen and (max-width: 1199px) {
+          font-size: 30px;
+        }
+        @media screen and (max-width: 800px) {
+          font-size: 26px;
+        }
+        @media screen and (max-width: 575px) {
+          font-size: 22px;
+        }
+      }
+
+      &:nth-child(2) {
+        font-size: 48px;
+
+        @media screen and (max-width: 1921px) {
+          font-size: 36px;
+        }
+        @media screen and (max-width: 1441px) {
+          font-size: 30px;
+        }
+        @media screen and (max-width: 1199px) {
+          font-size: 24px;
+        }
+        @media screen and (max-width: 800px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 575px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
