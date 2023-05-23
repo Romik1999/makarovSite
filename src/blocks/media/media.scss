@@ -1,0 +1,13 @@
+@import "../../scss/vars";
+
+.media {
+  &__img {
+    display: flex;
+
+    & img,
+    & svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

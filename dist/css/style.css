@@ -635,6 +635,18 @@ main {
   font-size: 48px;
 }
 
+.media__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.media__img img,
+.media__img svg {
+  width: 100%;
+  height: auto;
+}
+
 .deadline {
   display: -webkit-box;
   display: -ms-flexbox;
