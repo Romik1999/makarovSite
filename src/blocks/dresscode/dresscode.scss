@@ -15,15 +15,17 @@
 
     @media screen and (max-width: 1441px) {
       font-size: 24px;
+      margin-bottom: 30px;
     }
 
     @media screen and (max-width: 800px) {
-      font-size: 22px;
+      font-size: 20px;
+      margin-bottom: 15px;
     }
 
     @media screen and (max-width: 576px) {
-      font-size: 18px;
-      margin-bottom: 30px;
+      font-size: 16px;
+      margin-bottom: 15px;
     }
   }
 
@@ -32,21 +34,43 @@
     padding: 0 100px;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 50px;
 
     @media screen and (max-width: 1921px) {
       padding: 0 70px;
     }
-
     @media screen and (max-width: 1441px) {
       padding: 0 50px;
+      margin-bottom: 30px;
     }
-
     @media screen and (max-width: 1199px) {
       width: 100%;
     }
-
+    @media screen and (max-width: 800px) {
+      margin-bottom: 15px;
+    }
     @media screen and (max-width: 380px) {
       width: 80%;
+    }
+  }
+
+  &__notice{
+    font-size: 50px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1921px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 1441px) {
+      font-size: 24px;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
     }
   }
 
@@ -74,7 +98,7 @@
       }
       @media screen and (max-width: 576px) {
         width: 100% !important;
-        height: 350px !important;
+        height: 300px !important;
       }
 
       @media screen and (max-width: 380px) {

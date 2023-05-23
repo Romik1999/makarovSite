@@ -11,6 +11,14 @@
   padding: 0 100px;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.dresscode__notice {
+  font-size: 50px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .dresscode-slider__item {
@@ -79,6 +87,10 @@
     padding: 0 70px;
   }
 
+  .dresscode__notice {
+    font-size: 30px;
+  }
+
   .dresscode-slider__item {
     height: 350px !important;
   }
@@ -103,10 +115,16 @@
 @media screen and (max-width: 1441px) {
   .dresscode__text {
     font-size: 24px;
+    margin-bottom: 30px;
   }
 
   .dresscode__slider {
     padding: 0 50px;
+    margin-bottom: 30px;
+  }
+
+  .dresscode__notice {
+    font-size: 24px;
   }
 
   .dresscode-slider__item {
@@ -139,19 +157,32 @@
 
 @media screen and (max-width: 800px) {
   .dresscode__text {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .dresscode__slider {
+    margin-bottom: 15px;
+  }
+
+  .dresscode__notice {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .dresscode__text {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .dresscode__notice {
+    font-size: 16px;
   }
 
   .dresscode-slider__item {
     width: 100% !important;
-    height: 350px !important;
+    height: 300px !important;
   }
 }
 
