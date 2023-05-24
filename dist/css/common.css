@@ -72,9 +72,6 @@ main {
 
 @media screen and (max-width: 576px) {
   .section {
-    padding-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding: 60px 15px;
   }
 }

@@ -27,6 +27,14 @@
   line-height: calc((100vh - 60px) / 7);
 }
 
+.hero__marquee span:nth-child(even) {
+  background: -o-linear-gradient(0.02deg, #8A2387 5.11%, #E94057 55.51%, #F27121 99.98%);
+  background: linear-gradient(89.98deg, #8A2387 5.11%, #E94057 55.51%, #F27121 99.98%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 6px transparent;
+  color: #FFFFFF;
+}
+
 .hero__marquee span:nth-child(odd) {
   background: -o-linear-gradient(0.02deg, #8A2387 5.11%, #E94057 55.51%, #F27121 99.98%);
   background: linear-gradient(89.98deg, #8A2387 5.11%, #E94057 55.51%, #F27121 99.98%);

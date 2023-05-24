@@ -22,7 +22,64 @@
                        placeholder="+7 (927) 123 65 98">
             </label>
             <div class="form__confirm">
-
+                <div class="form-confirm">
+                    <div class="form-confirm__title">Присутствие</div>
+                    <div class="form-confirm__options">
+                        <label class="form-confirm__option">
+                            <input
+                                    class="form-confirm__radio"
+                                    type="radio"
+                                    name="confirm"
+                                    value="Не смогу присутствовать">
+                            <span class="form-confirm__icon"></span>
+                            <span class="form-confirm__text">Не смогу присутствовать</span>
+                        </label>
+                        <label class="form-confirm__option">
+                            <input
+                                    class="form-confirm__radio"
+                                    type="radio"
+                                    name="confirm"
+                                    value="с радостью приду!">
+                            <span class="form-confirm__icon"></span>
+                            <span class="form-confirm__text">с радостью приду!</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form__alcohol">
+                <div class="form-alcohol">
+                    <div class="form-alcohol__title">Какой алкоголь предпочитаете?</div>
+                    <div class="form-alcohol__slider">
+                        <div class="alcohol-slider">
+                            <div class="alcohol-slider__options">
+                                <div class="alcohol-slider__option">
+                                    <div class="alcohol-slider__icon">
+                                        <img src="./img/range-icon-1.svg">
+                                    </div>
+                                    <div class="alcohol-slider__text">Без алкоголя</div>
+                                </div>
+                                <div class="alcohol-slider__option">
+                                    <div class="alcohol-slider__icon">
+                                        <img src="./img/range-icon-2.svg">
+                                    </div>
+                                    <div class="alcohol-slider__text">легкий алкоголь</div>
+                                </div>
+                                <div class="alcohol-slider__option">
+                                    <div class="alcohol-slider__icon">
+                                        <img src="./img/range-icon-3.svg">
+                                    </div>
+                                    <div class="alcohol-slider__text">Крепкий алкоголь</div>
+                                </div>
+                            </div>
+                            <div class="alcohol-slider__range">
+                                <div class="range">
+                                    <span class="range__track"></span>
+                                    <input class="range__input" type="range" min="1" max="3" value="1" step="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="form__buttons">
                 <button class="form__button">
