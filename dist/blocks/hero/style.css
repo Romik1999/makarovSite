@@ -24,7 +24,7 @@
   z-index: 10;
   font-family: DelaGothicOne, sans-serif;
   font-size: calc((100vh - 60px) / 7);
-  line-height: 185px;
+  line-height: calc((100vh - 60px) / 7);
 }
 
 .hero__marquee span:nth-child(odd) {
