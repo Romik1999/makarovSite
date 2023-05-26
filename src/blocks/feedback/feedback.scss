@@ -2,23 +2,90 @@
 
 .feedback {
   &__form {
-    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  & .fp-overflow {
+    overflow: visible;
   }
 }
 
 .form {
-  background: rgba(193, 193, 193, 0.1);
-  box-shadow: 10px 10px 37px 7px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(7.5px);
-  border-radius: 50px;
   max-width: 795px;
   width: 100%;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  position: relative;
   box-sizing: border-box;
+
+  &__card {
+    box-shadow: 10px 10px 37px 7px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7.5px);
+    border-radius: 50px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.2s;
+
+    &.active {
+      z-index: 1;
+      opacity: 1;
+    }
+
+    &--first {
+      background: rgba(193, 193, 193, 0.1);
+    }
+
+    &--second {
+      background: linear-gradient(52.21deg, rgba(138, 35, 135, 0.75) 0%, rgba(233, 64, 87, 0.75) 48.26%, rgba(242, 113, 33, 0.75) 100%);
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      width: 100%;
+      height: 100%;
+
+      & * {
+        color: $white;
+      }
+
+      & input[type="text"] {
+        border-bottom: 2px solid $white;
+
+        &::placeholder {
+          color: $white;
+        }
+      }
+
+      & .form-confirm__icon {
+        border: 3px solid $white;
+        background: transparent;
+        box-shadow: none;
+      }
+
+      & .form-confirm__radio:checked + .form-confirm__icon {
+        background: $white;
+      }
+
+      & .form__button {
+        background: $white;
+
+        & span {
+          background: linear-gradient(90deg, #8A2387 0%, #E94057 50.87%, #F27121 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
+      }
+    }
+  }
 
   &__title {
     font-family: DelaGothicOne, sans-serif;
@@ -30,15 +97,10 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    margin-bottom: 30px;
   }
 
   &-field {
     display: block;
-
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
 
     &__title {
       display: block;
@@ -82,13 +144,8 @@
     }
   }
 
-  &__confirm {
-    margin-bottom: 40px;
-  }
-
   &-confirm {
     display: flex;
-    align-items: center;
     column-gap: 20px;
 
     &__title {
@@ -100,13 +157,13 @@
     &__options {
       display: flex;
       flex-direction: column;
-      row-gap: 20px;
+      row-gap: 10px;
     }
 
     &__option {
       display: flex;
       align-items: center;
-      column-gap: 20px;
+      column-gap: 15px;
       position: relative;
       cursor: pointer;
     }
@@ -131,7 +188,6 @@
 
       background: #FFFFFF;
       border: 3px solid #000000;
-      box-shadow: inset 2px 4px 5px 1px rgba(0, 0, 0, 0.25);
       border-radius: 50%;
       transition: 0.2s;
     }
@@ -178,20 +234,21 @@
     &:hover {
       background: linear-gradient(90deg, #8A2387 0%, #E94057 51.91%, #F27121 100%);
     }
-  }
 
-  &__alcohol {
-    margin-bottom: 30px;
-    display: none;
-    width: 100%;
-
-    &.active{
-      display: flex;
+    &--disable{
+      background: #DBDBDB;
+      pointer-events: none;
     }
   }
 
   &-alcohol {
     width: 100%;
+    display: none;
+
+    &.active {
+      display: block
+    }
+
     &__title {
       font-family: DelaGothicOne, sans-serif;
       font-size: 16px;

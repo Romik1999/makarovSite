@@ -8,58 +8,49 @@
   margin: 0 auto;
   margin-bottom: 50px;
 }
-
+@media screen and (max-width: 1921px) {
+  .questions__text {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1441px) {
+  .questions__text {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .questions__text {
+    font-size: 18px;
+  }
+}
 .questions__phone {
   font-family: DelaGothicOne, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, right top, from(#8A2387), color-stop(50.87%, #E94057), to(#F27121));
-  background: -o-linear-gradient(left, #8A2387 0%, #E94057 50.87%, #F27121 100%);
   background: linear-gradient(90deg, #8A2387 0%, #E94057 50.87%, #F27121 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
-
 @media screen and (max-width: 1921px) {
-  .questions__text {
-    font-size: 30px;
-  }
-
   .questions__phone {
     font-size: 40px;
   }
 }
-
 @media screen and (max-width: 1441px) {
-  .questions__text {
-    font-size: 26px;
-    margin-bottom: 35px;
-  }
-
   .questions__phone {
     font-size: 30px;
   }
 }
-
 @media screen and (max-width: 576px) {
-  .questions__text {
-    font-size: 18px;
-  }
-
   .questions__phone {
     font-size: 22px;
   }
