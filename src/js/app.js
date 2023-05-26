@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    // таймер
+// таймер
     let countDownDate = new Date("August 19, 2023 17:00:00").getTime();
 
     let x = setInterval(function () {
@@ -139,4 +139,58 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(x);
         }
     }, 1000);
+});
+
+jQuery(function ($) {
+    const $form = $('.form');
+
+    $('#button--send1').click(function (e) {
+        let fio1 = $('input[name="fio1"]').val();
+        let phone1 = $('input[name="phone1"]').val();
+        let confirm1 = $('input[name="confirm1"]:checked').val();
+        let alcohol1 = $('input[name="alcohol1"]').val();
+
+        let fio2 = $('input[name="fio2"]').val();
+        let phone2 = $('input[name="phone2"]').val();
+        let confirm2 = $('input[name="confirm2"]:checked').val();
+        let alcohol2 = $('input[name="alcohol2"]').val();
+
+
+        if (fio1 && phone1 && confirm1 && alcohol1) {
+            if ($('.form__card--second').hasClass('active')){
+                console.log(5555555)
+                return
+                $.ajax({
+                    type: $form.attr('method'),
+                    url: $form.attr('action'),
+                    data: $form.serialize()
+                }).done(function () {
+                    // console.log('success');
+                    alert('success3333333!')
+                }).fail(function () {
+                    console.log('fail');
+                });
+                e.preventDefault();
+            } else {
+                alert('Заполни поля СУКА!!!')
+                return;
+            }
+
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: $form.serialize()
+            }).done(function () {
+                // console.log('success');
+                alert('success123!')
+            }).fail(function () {
+                console.log('fail');
+            });
+            e.preventDefault();
+        } else {
+            alert('Заполни поля СУКА22222!!!')
+        }
+
+    });
+
 });

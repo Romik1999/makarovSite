@@ -1,7 +1,7 @@
 <section class="section feedback" data-anchor="feedback">
     @@include('section-title/section-title.html', {sectionTitleClass: 'feedback__title', sectionTitleText: 'Подтвердите свое присутствие'})
     <div class="feedback__form">
-        <form class="form" action="./mail.php">
+        <form class="form" action="./mail.php" method="post">
             <!--первая персона-->
             <div class="form__card form__card--first active">
                 <div class="form__title">Я...</div>
@@ -10,7 +10,7 @@
                         <span class="form-field__title">Фамилия имя отчество</span>
                         <input class="form-field__input"
                                id="fio1"
-                               name="fio"
+                               name="fio1"
                                type="text"
                                placeholder="Иванов Иван Иванович">
                     </label>
@@ -18,7 +18,7 @@
                         <span class="form-field__title">Телефон для связи</span>
                         <input class="form-field__input"
                                id="phone1"
-                               name="phone"
+                               name="phone1"
                                type="text"
                                onkeypress="maskPhone(event)"
                                onpaste="onPastePhone(event)"
@@ -77,7 +77,7 @@
                                     <span class="range__track"></span>
                                     <input
                                             class="range__input"
-                                            name="alcohol"
+                                            name="alcohol1"
                                             type="range" min="1" max="3" value="1" step="1"
                                     >
                                 </div>
@@ -90,10 +90,10 @@
                         Добавить персону
                         <img src="./img/button-add.svg">
                     </div>
-                    <button class="form__button" type="submit">
+                    <div class="form__button" id="button--send1">
                         Отправить ответ
                         <img src="./img/button-submit.svg">
-                    </button>
+                    </div>
                 </div>
             </div>
             <!--/первая персона-->
@@ -104,16 +104,16 @@
                     <label class="form-field">
                         <span class="form-field__title">Фамилия имя отчество</span>
                         <input class="form-field__input"
-                               id="fio"
-                               name="fio"
+                               id="fio2"
+                               name="fio2"
                                type="text"
                                placeholder="Иванов Иван Иванович">
                     </label>
                     <label class="form-field">
                         <span class="form-field__title">Телефон для связи</span>
                         <input class="form-field__input"
-                               id="phone"
-                               name="phone"
+                               id="phone2"
+                               name="phone2"
                                type="text"
                                onkeypress="maskPhone(event)"
                                onpaste="onPastePhone(event)"
@@ -127,7 +127,7 @@
                             <input
                                     class="form-confirm__radio"
                                     type="radio"
-                                    name="confirm"
+                                    name="confirm2"
                                     value="Не смогу присутствовать">
                             <span class="form-confirm__icon"></span>
                             <span class="form-confirm__text">Не смогу присутствовать</span>
@@ -136,7 +136,7 @@
                             <input
                                     class="form-confirm__radio"
                                     type="radio"
-                                    name="confirm"
+                                    name="confirm2"
                                     value="с радостью приду!"
                             >
                             <span class="form-confirm__icon"></span>
@@ -173,7 +173,7 @@
                                     <span class="range__track"></span>
                                     <input
                                             class="range__input"
-                                            name="alcohol"
+                                            name="alcohol2"
                                             type="range" min="1" max="3" value="1" step="1"
                                     >
                                 </div>
@@ -186,10 +186,10 @@
                         <img src="./img/back-arrow.svg">
                         <span>вернуться назад</span>
                     </div>
-                    <button class="form__button" type="submit">
+                    <div class="form__button" id="button--send2">
                         <span>Отправить ответ</span>
                         <img src="./img/button-submit--color.svg">
-                    </button>
+                    </div>
                 </div>
             </div>
             <!--/вторая персона-->
