@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
     //ползунок
     let rangeInputs = document.querySelectorAll(".range__input");
 
-    console.log(rangeInputs);
     rangeInputs.forEach(rangeInput => {
         let rangeTrack = rangeInput.parentNode.querySelector(".range__track");
         rangeInput.addEventListener('input', function () {
