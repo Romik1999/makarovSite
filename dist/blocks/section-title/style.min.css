@@ -42,3 +42,8 @@
     margin-bottom: 15px;
   }
 }
+@media screen and (max-width: 355px) {
+  .section-title {
+    font-size: 24px;
+  }
+}

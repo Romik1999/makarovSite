@@ -265,24 +265,26 @@
             <!--первая персона-->
             <div class="form__card form__card--first active">
                 <div class="form__title">Я...</div>
-                <label class="form-field">
-                    <span class="form-field__title">Фамилия имя отчество</span>
-                    <input class="form-field__input"
-                           id="fio1"
-                           name="fio"
-                           type="text"
-                           placeholder="Фамилия имя отчество">
-                </label>
-                <label class="form-field">
-                    <span class="form-field__title">Телефон для связи</span>
-                    <input class="form-field__input"
-                           id="phone1"
-                           name="phone"
-                           type="text"
-                           onkeypress="maskPhone(event)"
-                           onpaste="onPastePhone(event)"
-                           placeholder="+7 (927) 123 65 98">
-                </label>
+                <div class="form-fields">
+                    <label class="form-field">
+                        <span class="form-field__title">Фамилия имя отчество</span>
+                        <input class="form-field__input"
+                               id="fio1"
+                               name="fio"
+                               type="text"
+                               placeholder="Фамилия имя отчество">
+                    </label>
+                    <label class="form-field">
+                        <span class="form-field__title">Телефон для связи</span>
+                        <input class="form-field__input"
+                               id="phone1"
+                               name="phone"
+                               type="text"
+                               onkeypress="maskPhone(event)"
+                               onpaste="onPastePhone(event)"
+                               placeholder="+7 (927) 123 65 98">
+                    </label>
+                </div>
                 <div class="form-confirm">
                     <div class="form-confirm__title">Присутствие</div>
                     <div class="form-confirm__options" id="form-confirm__options1">
@@ -357,24 +359,27 @@
             <!--/первая персона-->
             <!--вторая персона-->
             <div class="form__card form__card--second">
-                <label class="form-field">
-                    <span class="form-field__title">Фамилия имя отчество</span>
-                    <input class="form-field__input"
-                           id="fio"
-                           name="fio"
-                           type="text"
-                           placeholder="Фамилия имя отчество">
-                </label>
-                <label class="form-field">
-                    <span class="form-field__title">Телефон для связи</span>
-                    <input class="form-field__input"
-                           id="phone"
-                           name="phone"
-                           type="text"
-                           onkeypress="maskPhone(event)"
-                           onpaste="onPastePhone(event)"
-                           placeholder="+7 (927) 123 65 98">
-                </label>
+                <div class="form__title">Моя пара</div>
+                <div class="form-fields">
+                    <label class="form-field">
+                        <span class="form-field__title">Фамилия имя отчество</span>
+                        <input class="form-field__input"
+                               id="fio"
+                               name="fio"
+                               type="text"
+                               placeholder="Фамилия имя отчество">
+                    </label>
+                    <label class="form-field">
+                        <span class="form-field__title">Телефон для связи</span>
+                        <input class="form-field__input"
+                               id="phone"
+                               name="phone"
+                               type="text"
+                               onkeypress="maskPhone(event)"
+                               onpaste="onPastePhone(event)"
+                               placeholder="+7 (927) 123 65 98">
+                    </label>
+                </div>
                 <div class="form-confirm">
                     <div class="form-confirm__title">Присутствие</div>
                     <div class="form-confirm__options" id="form-confirm__options2">
@@ -392,7 +397,8 @@
                                     class="form-confirm__radio"
                                     type="radio"
                                     name="confirm"
-                                    value="с радостью приду!">
+                                    value="с радостью приду!"
+                            >
                             <span class="form-confirm__icon"></span>
                             <span class="form-confirm__text">с радостью приду!</span>
                         </label>
@@ -405,19 +411,19 @@
                             <div class="alcohol-slider__options">
                                 <div class="alcohol-slider__option">
                                     <div class="alcohol-slider__icon">
-                                        <img src="./img/range-icon-1.svg">
+                                        <img src="./img/range-icon-1--white.svg">
                                     </div>
                                     <div class="alcohol-slider__text">Без алкоголя</div>
                                 </div>
                                 <div class="alcohol-slider__option">
                                     <div class="alcohol-slider__icon">
-                                        <img src="./img/range-icon-2.svg">
+                                        <img src="./img/range-icon-2--white.svg">
                                     </div>
                                     <div class="alcohol-slider__text">легкий алкоголь</div>
                                 </div>
                                 <div class="alcohol-slider__option">
                                     <div class="alcohol-slider__icon">
-                                        <img src="./img/range-icon-3.svg">
+                                        <img src="./img/range-icon-3--white.svg">
                                     </div>
                                     <div class="alcohol-slider__text">Крепкий алкоголь</div>
                                 </div>
